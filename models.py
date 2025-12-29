@@ -8,7 +8,7 @@ class Habit(Base):
     id = Column(Integer, primary_key = True, index = True)
     name = Column (String, index = True)
     description = Column(String, nullable= True)
-    created_at = Column(DateTime, default= datetime.now)
+    created_at = Column(DateTime, default = datetime.time)
     is_completed_today = Column(Boolean, default = False)
 
     
